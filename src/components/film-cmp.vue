@@ -7,9 +7,9 @@
         class="col-12 col-sm-12 col-md-6 col-lg-4 mb-5 film"
         v-for="(film, index) in films"
         :key="index"
-        @click="handleRouteToFilm(index)"
+        @click="handleRouteToFilm(film)"
       >
-        <h3>{{ film.title }}</h3>
+        <h3 class="fw-bold">{{ film.title }}</h3>
         <div class="text-muted fs-4 pb-2">{{ film.director }}</div>
         <div class="text-start">{{ film.opening_crawl }}</div>
       </div>
@@ -42,8 +42,11 @@ export default {
         console.log(error);
       }
     },
-    handleRouteToFilm(index) {
-      this.$router.push({ name: "films-details", params: { id: index + 1 } });
+    handleRouteToFilm(item) {
+      const regex = /\d+/g;
+      const string = item.url;
+      const matches = string.match(regex);
+      this.$router.push({ name: "films-details", params: { id: matches[0] } });
     },
   },
   async mounted() {

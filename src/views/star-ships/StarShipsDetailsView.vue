@@ -4,12 +4,12 @@
 
     <div class="container pt-5" v-if="starShips && !loading">
       <div class="star-ships text-white cp">
-        <h3>{{ starShips.name }}</h3>
+        <h3 class="fw-bold">{{ starShips.name }}</h3>
         <div>{{ starShips.model }}</div>
         <div>{{ starShips.manufacturer }}</div>
         <div>{{ starShips.consumables }}</div>
-        <button class="btn btn-primary mt-3" @click="handleRouteToHome">
-          Back to Home
+        <button class="btn btn-primary mt-3" @click="handleRouteToStarShips">
+          Back to StarShips
         </button>
       </div>
     </div>
@@ -31,7 +31,7 @@ export default {
     LoadingCmp,
   },
   computed: {
-    ...mapState(["starShips", "loading"]),
+    ...mapState(["loading"]),
   },
 
   methods: {
@@ -50,8 +50,8 @@ export default {
         }
       }
     },
-    handleRouteToHome() {
-      this.$router.push("/");
+    handleRouteToStarShips() {
+      this.$router.push({ name: "star-ships" });
     },
   },
 

@@ -4,7 +4,7 @@
 
     <div class="container pt-5" v-if="films && !loading">
       <div class="film text-white">
-        <h3>{{ films.title }}</h3>
+        <h3 class="fw-bold">{{ films.title }}</h3>
         <div>{{ films.director }}</div>
         <div>{{ films.producer }}</div>
         <div>{{ films.release_date }}</div>

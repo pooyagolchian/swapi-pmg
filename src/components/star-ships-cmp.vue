@@ -7,7 +7,7 @@
         class="col-12 col-sm-12 col-md-6 col-lg-4 mb-5 text-left text-white cp"
         v-for="(starShip, index) in starShips"
         :key="index"
-        @click="handleRouteToStarShips(index)"
+        @click="handleRouteToStarShips(starShip)"
       >
         <h3>{{ starShip.name }}</h3>
         <div class="text-muted fs-4 pb-2">{{ starShip.starship_class }}</div>
@@ -42,10 +42,14 @@ export default {
         console.log(error);
       }
     },
-    handleRouteToStarShips(index) {
+    handleRouteToStarShips(item) {
+      const regex = /\d+/g;
+      const string = item.url;
+      const matches = string.match(regex);
+
       this.$router.push({
         name: "star-ships-details",
-        params: { id: index + 1 },
+        params: { id: matches[0] },
       });
     },
   },
