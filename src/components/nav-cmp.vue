@@ -10,11 +10,13 @@
       </router-link>
     </div>
     <div class="col nav__menu">
-      <router-link to="/films">
+      <router-link class="text-center" to="/films">
         <i class="menu-icon icon icon-storm_trooper_by_radiusss"></i>
+        <div>Films</div>
       </router-link>
-      <router-link to="/star-ships">
+      <router-link class="text-center" to="/star-ships">
         <i class="menu-icon icon icon-millenium_falcon_by_radiusss"></i>
+        <div>Star Ships</div>
       </router-link>
     </div>
   </div>
