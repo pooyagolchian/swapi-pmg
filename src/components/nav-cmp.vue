@@ -1,7 +1,7 @@
 <template>
   <div class="nav pt-5">
     <div class="col nav__logo">
-      <router-link to="/films" class="d-flex justify-start">
+      <router-link to="/films" class="d-flex justify-start p-0">
         <img
           class="col col-8 col-sm-4 col-md-4 logo"
           src="/img/starwar-logo.svg"
