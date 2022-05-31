@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="container pt-5" v-if="starShips">
-      <div class="star-ships">
+    <LoadingCmp v-if="loading"></LoadingCmp>
+
+    <div class="container pt-5" v-if="starShips && !loading">
+      <div class="star-ships text-white cp">
         <h3>{{ starShips.name }}</h3>
         <div>{{ starShips.model }}</div>
         <div>{{ starShips.manufacturer }}</div>
@@ -15,6 +17,9 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
+import LoadingCmp from "@/components/loading-cmp";
+
 export default {
   name: "StarShipsDetailsView",
   data() {
@@ -22,14 +27,23 @@ export default {
       starShips: [],
     };
   },
+  components: {
+    LoadingCmp,
+  },
+  computed: {
+    ...mapState(["starShips", "loading"]),
+  },
+
   methods: {
     async getAllFilmsData() {
       try {
+        this.$store.dispatch("loading", true);
         this.starShips = (
           await this.$api.starShips.getAllStarShipById(
             Number(this.$route.params.id)
           )
         ).data;
+        this.$store.dispatch("loading", false);
       } catch (error) {
         if (error.response.status === 404) {
           this.$router.push("/");

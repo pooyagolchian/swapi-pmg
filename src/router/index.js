@@ -31,7 +31,7 @@ const routes = [
       ),
   },
   {
-    path: "/starship/:id",
+    path: "/star-ships/:id",
     name: "star-ships-details",
     component: () =>
       import(

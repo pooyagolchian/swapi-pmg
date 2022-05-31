@@ -1,5 +1,8 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import VuexPersistence from "vuex-persist";
+
+Vue.use(Vuex);
 
 Vue.use(Vuex);
 
@@ -36,4 +39,5 @@ export default new Vuex.Store({
       await commit("SET_LOADING", (state.loading = payload));
     },
   },
+  plugins: [new VuexPersistence().plugin],
 });

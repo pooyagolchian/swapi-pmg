@@ -3,6 +3,7 @@
 
 body {
   background-color: #333;
+  text-align: left;
 }
 
 .film {
@@ -15,16 +16,8 @@ body {
   cursor: pointer;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
 .menu-icon {
-  font-size: 90px;
+  font-size: 50px;
 }
 
 .nav {
@@ -57,4 +50,8 @@ body {
       color: #42b983;
     }
   }
+}
+
+.cp {
+  cursor: pointer !important;
 }
