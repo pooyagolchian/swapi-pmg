@@ -4,7 +4,7 @@
 
     <div v-if="!loading" class="row">
       <div
-        class="col-12 col-sm-12 col-md-4 mb-5 text-left text-white cp"
+        class="col-12 col-sm-12 col-md-6 col-lg-4 mb-5 text-left text-white cp"
         v-for="(starShip, index) in starShips"
         :key="index"
         @click="handleRouteToStarShips(index)"

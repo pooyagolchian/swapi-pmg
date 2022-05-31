@@ -2,7 +2,11 @@
   <div class="nav pt-5">
     <div class="col nav__logo">
       <router-link to="/films" class="d-flex justify-start">
-        <img class="col col-3 logo" src="/img/starwar-logo.svg" alt="" />
+        <img
+          class="col col-8 col-sm-4 col-md-4 logo"
+          src="/img/starwar-logo.svg"
+          alt=""
+        />
       </router-link>
     </div>
     <div class="col nav__menu">

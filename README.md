@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d91d9d13-b4b3-4363-bc52-e43ec2975b58/deploy-status)](https://app.netlify.com/sites/pmg-swapi/deploys)
 # PMG - Swapi API with Vue.js
 This project built with:
 - Vue.js

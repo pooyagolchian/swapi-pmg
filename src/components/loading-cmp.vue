@@ -1,6 +1,10 @@
 <template>
   <div class="loading">
-    <img class="col col-1 loading__item" src="/img/loading.svg" alt="" />
+    <img
+      class="col col-4 col-sm-4 col-md-1 loading__item"
+      src="/img/loading.svg"
+      alt=""
+    />
   </div>
 </template>
 
