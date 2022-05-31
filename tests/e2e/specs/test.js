@@ -28,6 +28,6 @@ describe("PMG Starwar Test", () => {
     cy.contains("h3", "CR90 corvette");
     cy.contains("div", "corvette");
     cy.contains("h3", "CR90 corvette").click();
-    cy.location("pathname").should("eq", "/star-ships/1");
+    cy.location("pathname").should("eq", "/star-ships/2");
   });
 });
