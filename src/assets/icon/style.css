@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?egc8vx');
+  src:  url('fonts/icomoon.eot?egc8vx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?egc8vx') format('truetype'),
+    url('fonts/icomoon.woff?egc8vx') format('woff'),
+    url('fonts/icomoon.svg?egc8vx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bb_8_by_radiusss:before {
+  content: "\e900";
+}
+.icon-bb_8_top_by_radiusss:before {
+  content: "\e901";
+}
+.icon-blaster_by_radiusss:before {
+  content: "\e902";
+}
+.icon-boba_fett_by_radiusss:before {
+  content: "\e903";
+}
+.icon-btl_y_wing_by_radiusss:before {
+  content: "\e904";
+}
+.icon-c3po_by_radiusss:before {
+  content: "\e905";
+}
+.icon-darth_vader_by_radiusss:before {
+  content: "\e906";
+}
+.icon-death_star_by_radiusss:before {
+  content: "\e907";
+}
+.icon-finn_by_radiusss:before {
+  content: "\e908";
+}
+.icon-geonosis_by_radiusss:before {
+  content: "\e909";
+}
+.icon-gloves_by_radiusss:before {
+  content: "\e90a";
+}
+.icon-k_2so_by_radiusss:before {
+  content: "\e90b";
+}
+.icon-kylo_ren_by_radiusss:before {
+  content: "\e90c";
+}
+.icon-lightsaber_by_radiusss:before {
+  content: "\e90d";
+}
+.icon-master_yoda_by_radiusss:before {
+  content: "\e90e";
+}
+.icon-millenium_falcon_by_radiusss:before {
+  content: "\e90f";
+}
+.icon-miscellaneous_by_radiusss:before {
+  content: "\e910";
+}
+.icon-r2d2_by_radiusss:before {
+  content: "\e911";
+}
+.icon-rz_1_a_wing_by_radiusss:before {
+  content: "\e912";
+}
+.icon-scout_trooper_by_radiusss:before {
+  content: "\e913";
+}
+.icon-speeder_by_radiusss:before {
+  content: "\e914";
+}
+.icon-storm_trooper_by_radiusss:before {
+  content: "\e915";
+}
+.icon-t_65_x_wing_by_radiusss:before {
+  content: "\e916";
+}
+.icon-tie_fighter_by_radiusss:before {
+  content: "\e917";
+}

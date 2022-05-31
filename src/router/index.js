@@ -1,23 +1,42 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import HomeView from "../views/HomeView.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
+    redirect: "/films",
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
+    path: "/films",
+    name: "films",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+      import(/* webpackChunkName: "film" */ "../views/films/FilmsView.vue"),
+  },
+  {
+    path: "/star-ships",
+    name: "star-ships",
+    component: () =>
+      import(
+        /* webpackChunkName: "film" */ "../views/star-ships/StarShipsView.vue"
+      ),
+  },
+  {
+    path: "/films/:id",
+    name: "films-details",
+    component: () =>
+      import(
+        /* webpackChunkName: "film" */ "../views/films/FilmDetailsView.vue"
+      ),
+  },
+  {
+    path: "/starship/:id",
+    name: "star-ships-details",
+    component: () =>
+      import(
+        /* webpackChunkName: "film" */ "../views/star-ships/StarShipsDetailsView.vue"
+      ),
   },
 ];
 

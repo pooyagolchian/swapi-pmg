@@ -1,0 +1,60 @@
+@import "~bootstrap";
+@import "./../icon/style.css";
+
+body {
+  background-color: #333;
+}
+
+.film {
+  color: white;
+  cursor: pointer;
+}
+
+.star-ships {
+  color: white;
+  cursor: pointer;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.menu-icon {
+  font-size: 90px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  a {
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+    padding: 0 1em;
+    &:hover {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
