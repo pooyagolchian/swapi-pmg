@@ -4,7 +4,7 @@ This project built with:
 - Vuex
 - Javascript
 - Axios (API factory)
-- Github action
+- Github Action
 - Cypress for E2E testing
 
 ---
@@ -18,6 +18,10 @@ Using [Prettier](https://prettier.io/) for opinionated code formatter.
 It will take care of the formatting for you.
 Prettier creates an abstract syntax tree from your code and uses it to write new code formatted according to a set of rules.
 In addition, I check pretty before every commit by adding a pre-commit hook. For more detail check package.json, husky section.
+
+
+### AXIOS API factory
+I used the AXIOS instance for the API factory that I considered `S` in `SOLID` for isolation API folder.
 
 ### Husky
 
@@ -54,9 +58,10 @@ OR
 yarn cypress open
 ```
 
-
-
-
+For command-line test I used the below command
+```
+yarn cypress run
+```
 
 ### Lints and fixes files
 ```
