@@ -1,0 +1,54 @@
+body {
+  background-color: #333;
+  text-align: left;
+}
+
+.film {
+  color: white;
+  cursor: pointer;
+}
+
+.star-ships {
+  color: white;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 50px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  a {
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+    padding: 0 1em;
+    &:hover {
+      text-decoration: none;
+      color: yellow;
+    }
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+.cp {
+  cursor: pointer !important;
+}
